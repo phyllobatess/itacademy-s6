@@ -1,15 +1,18 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+//import viteLogo from '/vite.svg'
 
 import "./App.css";
-import Welcome from "./componentes/escena/Escena";
+import { Escena } from "./componentes/escena/Escena";
+import { data } from "./componentes/data";
 
 function App() {
   return (
-  
-      <Welcome/>
-    
+    <>
+      {data.map((sentence, index) => (
+        <Escena key={index} sentence={sentence.texto} />
+      ))}
+    </>
   );
 }
 

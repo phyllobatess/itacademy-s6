@@ -6,12 +6,14 @@ import "./App.css";
 import { Escena } from "./componentes/escena/Escena";
 import { data } from "./componentes/data";
 
+
 function App() {
+  //La propiedad "key" es un atributo especial string que se debe incluir al crear listas de elementos. Cada key debe ser único por lista.
   return (
     <>
-      {data.map((sentence, index) => (
-        <Escena key={index} sentence={sentence.texto} />
-      ))}
+      {data.map((item) => (
+        <Escena key={item.id} sentence={item.texto} />
+      ))} 
     </>
   );
 }

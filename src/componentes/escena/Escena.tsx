@@ -9,4 +9,3 @@ export const Escena = (props:any) => {
    );
  }
 
-//Tambien se podría hacer como "export const Escena=>""" 

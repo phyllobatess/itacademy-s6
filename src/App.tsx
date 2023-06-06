@@ -8,11 +8,11 @@ import { data } from "./componentes/data";
 
 
 function App() {
-  //La propiedad "key" es un atributo especial string que se debe incluir al crear listas de elementos. Cada key debe ser único por lista.
+  //La propiedad "key" es un atributo especial  que se debe incluir al crear listas de elementos. Cada key debe ser único por lista.
   return (
     <>
-      {data.map((item) => (
-        <Escena key={item.id} sentence={item.texto} />
+      {data.map((frase) => (
+        <Escena key={frase.id} sentence={frase.texto} />
       ))} 
     </>
   );

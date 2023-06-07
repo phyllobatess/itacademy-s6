@@ -4,6 +4,13 @@
   padding: 1rem;
   text-align: start;
 }
+.boton {
+  height: 5em;
+  width: 50%;
+  background-color: rgb(172, 164, 164);
+  border:solid 1px;
+  margin-top: 50px;
+}
 
 .logo {
   height: 6em;
@@ -39,4 +46,9 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.active{
+  color:rgb(108, 191, 73);
+  transition: all .3s ease-out;
 }

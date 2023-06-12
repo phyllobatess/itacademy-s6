@@ -8,6 +8,7 @@ import "./App.css";
 import { Escena } from "./componentes/escena/Escena";
 import { data } from "./componentes/data";
 import { useState } from "react";
+import { Back } from "./componentes/styled-components/Background";
 
 //Solo se pueden usar los HOOKS dentro de function components, no dentro de CLASES
 //USESTATE no se puede llamar dentro de un condicional
@@ -82,6 +83,7 @@ function App() {
             position={position}
           /> //le pasamos mediante props el state (position) que tenemos en cada momento.
         ))}
+        <Back background={data[position - 1].img}></Back>
       </>
     );
   }

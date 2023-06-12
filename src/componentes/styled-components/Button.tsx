@@ -10,6 +10,7 @@ export const DivStyle = styled.div`
   background: white;
   cursor: pointer;
   background-color: ${({ active }) => (active ? "pink" : "white")};
+  
 `;
 
 
